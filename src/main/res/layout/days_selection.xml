@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".DaySelectionActivity">
+
+
+    <TextView
+        android:id="@+id/textViewUpdateDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifier les jours de:"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkBoxLundi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:text="Lundi" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMardi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:text="Mardi" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMercredi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:text="Mercredi" />
+
+        <CheckBox
+            android:id="@+id/checkBoxJeudi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:text="Jeudi" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVendredi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:text="Vendredi" />
+
+        <Button
+            android:id="@+id/valider_jours"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custome_button"
+            android:text="Valider" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

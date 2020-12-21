@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FLEM</string>
+    <string-array name="spinner_role">
+        <item>Henry-Manager</item>
+        <item>Jean-Employé</item>
+        <item>Sophie-Employé</item>
+    </string-array>
+    <string-array name="spinner_desktop">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
